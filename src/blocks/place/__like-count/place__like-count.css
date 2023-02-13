@@ -1,0 +1,15 @@
+.place__like-count{
+    position: absolute;
+    right: 19px;
+    bottom: 12px;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width:580px) {
+    .place__like-count{
+        right: 28px;
+    }  
+}

@@ -1,0 +1,14 @@
+.popup__form{
+    position: relative;
+    max-width: 358px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}

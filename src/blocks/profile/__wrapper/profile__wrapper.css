@@ -1,0 +1,20 @@
+.profile__wrapper{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    column-gap: 30px; 
+}
+
+@media screen and (max-width:720px) {
+    .profile__wrapper{
+        column-gap: 20px;
+    }
+}
+@media screen and (max-width:580px) {
+    .profile__wrapper{
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 20px;   
+    }
+}

@@ -1,0 +1,15 @@
+.popup__content_use_del{
+    cursor: pointer;
+    position: relative;
+    padding: 34px 36px 37px 36px;
+    max-width: 430px;
+    width: 100%;
+    height: 181px;
+    margin: 0 auto;
+    margin-top: 196px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+}

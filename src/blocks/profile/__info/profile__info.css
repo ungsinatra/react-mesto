@@ -1,0 +1,48 @@
+.profile__info{
+    max-width: 336px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(189px,294) minmax(18px,24px));
+    grid-template-rows: repeat(2,max-content);
+    /* column-gap: 24px; */
+    row-gap: 7px;
+    justify-content: space-between;
+    
+    /* align-items: center; */
+    grid-template-areas: 
+    "name btn"
+    "desc desc";
+}
+
+@media screen and (max-width:720px) {
+    .profile__info{
+        column-gap: 10px;
+        max-width: 300px;
+        width: 100%;
+
+    }
+}
+@media screen and (max-width:580px) {
+    .profile__info{
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+@media screen and (max-width:444px) {
+    .profile__info{
+        box-sizing: border-box;
+        padding: 26px 0 34px 0;
+        justify-content: center;
+        row-gap: 14px;
+   
+    }
+}
+@media screen and (max-width:444px) {
+    .profile__info{
+    justify-content: center;
+    align-items: center;
+    row-gap: 7px;
+    column-gap: 10px;
+    }
+}

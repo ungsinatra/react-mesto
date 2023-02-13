@@ -1,0 +1,21 @@
+.place__item{
+    position: relative;
+    width: 282px;
+    display: flex;
+    overflow: hidden;
+    min-height: 361px;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    border-radius: 10px; 
+}
+@media screen  and (max-width:580px){
+    .place__item{
+        box-sizing: border-box;
+        /* padding: 0 19px 0 19px; */
+        max-width: 100%;
+        width: 100%;
+        border-radius: 10px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+}

@@ -1,0 +1,9 @@
+.place__btn-like_status_liked{
+    max-width: 22px;
+    width: 100%;
+    height: 19px;
+    background-image: url('../../../../images/place/like-active.svg');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+}

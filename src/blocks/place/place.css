@@ -1,0 +1,12 @@
+.place{
+    max-width: 880px; 
+    min-width: 282px; 
+    width: 100%; 
+    margin: 0 auto;
+}
+@media screen and (max-width:580px) {
+    .place{
+        box-sizing: border-box;
+        padding: 0 19px 0 19px;
+    }
+}
