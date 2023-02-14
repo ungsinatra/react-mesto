@@ -2,7 +2,9 @@ import React from 'react';
 
 const ImagePopup = ({card,onClose}) => {
     return (
-        <div className={`popup popup_use_img ${(card.isOpen) ? `popup__opened`: ''}`}>
+        <div
+         onClick={onClose}
+         className={`popup popup_use_img ${(card.isOpen) ? `popup__opened`: ''}`}>
         <div className="popup__content_use_img">
           <button
             onClick={onClose}
