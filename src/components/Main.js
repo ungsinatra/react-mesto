@@ -1,31 +1,9 @@
-import React, { useState, useEffect } from "react";
-import { api } from "../utils/api.js";
+import React, { useContext } from "react";
 import Card from "./Card";
+import { CurrentUserContext } from "../contexts/CurrentUserContext.js";
 
-const Main = ({handlers}) => {
-  const [userInfo, setUserInfo] = useState({
-    userAvatar: "",
-    userName: "",
-    userDescription: "",
-  });
-  const [cards, setCards] = useState([]);
-
-
-  useEffect(() => {
-    api.getUserInfo().then(({ avatar, name, about }) => {
-      setUserInfo({
-        userAvatar: avatar,
-        userName: name,
-        userDescription: about,
-      });
-    });
-  }, []);
-
-  useEffect(() => {
-    api.getCards().then((newCards) => {
-      setCards([...cards, ...newCards]);
-    });
-  }, []);
+const Main = ({cards,handlers}) => {
+  const userContext = useContext(CurrentUserContext);
 
   return (
     <main>
@@ -38,7 +16,7 @@ const Main = ({handlers}) => {
                 onClick={handlers.onEditAvatar}
               ></div>
               <div
-                style={{ backgroundImage: `url(${userInfo.userAvatar})` }}
+                style={{ backgroundImage: `url(${userContext.userAvatar})` }}
                 className="profile__avatar"
               ></div>
             </div>
@@ -50,8 +28,8 @@ const Main = ({handlers}) => {
                 area-label="Изменить"
                 onClick={handlers.onEditProfile}
               ></button>
-              <h1 className="profile__name">{userInfo.userName}</h1>
-              <p className="profile__description">{userInfo.userDescription}</p>
+              <h1 className="profile__name">{userContext.userName}</h1>
+              <p className="profile__description">{userContext.userDescription}</p>
             </div>
           </div>
           <button
@@ -68,7 +46,9 @@ const Main = ({handlers}) => {
             <Card
               card={card}
               key={card._id}
+              onClickLike = {handlers.onClickLike}
               onCardClickHandler={handlers.onCardClick}
+              onClickDelete = {handlers.onClickDelete}
             />
           ))}
         </ul>
