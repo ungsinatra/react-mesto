@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 
 const useValidation = (value,validations,isFocus) => {
     const [isEmpty,setEmpty] = useState(false);
@@ -35,7 +35,7 @@ const useValidation = (value,validations,isFocus) => {
         }
 
 
-    },[value]);
+    },[value,validations]);
 
 
     useEffect(() => {

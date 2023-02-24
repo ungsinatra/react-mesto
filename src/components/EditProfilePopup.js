@@ -15,14 +15,12 @@ const EditProfilePopup = ({ isOpen, onClose, onUpdateUser, isLoad }) => {
     isEmpty: true,
     maxLength: 30,
     minLength: 2,
-    isLink:false
   },isFocus);
   
   const descInput = useValidation(description, {
     isEmpty: true,
     maxLength: 200,
     minLength: 2,
-    isLink:false
   },isFocus);
 
   function handleSubmit(e) {
