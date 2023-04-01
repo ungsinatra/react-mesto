@@ -1,0 +1,19 @@
+.header__text {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
+@media screen and (max-width: 444px) {
+  .header__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

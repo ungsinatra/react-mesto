@@ -1,0 +1,7 @@
+.header__info_use_auth {
+  display: flex;
+  /* gap: 24px; */
+  justify-content: flex-end;
+  align-items: center;
+}
+

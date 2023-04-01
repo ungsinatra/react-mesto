@@ -1,0 +1,10 @@
+.header__info {
+  display: flex;
+  max-width: 230px;
+  width: 100%;
+  /* gap: 24px; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+

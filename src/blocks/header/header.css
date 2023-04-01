@@ -3,7 +3,10 @@
     width: 100%;
     margin: 0 auto;
     padding-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
     border-bottom:1px solid #545454;
+    box-sizing: border-box;
 }
 @media screen and (max-width:768px) {
     .header{
@@ -14,9 +17,21 @@
     
 }
 
+@media screen and (max-width:444px) {
+    .header{
+        max-width: 95%;
+        width: 100%;
+        padding: 0 0 27px 0;
+        margin: 0 auto;
+        
+    }
+    
+}
 @media screen and (max-width:320px) {
     .header{
-        padding: 0 0 27px 27px;
+        width: 100%;
+        padding: 0 30px 27px 30px;
+        margin: 0 auto;
     }
     
 }

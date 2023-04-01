@@ -1,0 +1,26 @@
+.header__link_use_auth{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background: transparent;
+    color: white;
+    text-align: left;
+}
+@media screen and (max-width: 444px) {
+    .header__link_use_auth {
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+  
+      text-align: right;
+    }
+  }

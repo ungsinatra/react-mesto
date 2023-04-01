@@ -1,0 +1,13 @@
+.header__link {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #a9a9a9;
+  outline: none; /* Для синий ободки */
+  border: 0;
+  background: transparent;
+}

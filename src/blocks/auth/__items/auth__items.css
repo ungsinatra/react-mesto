@@ -1,0 +1,11 @@
+.auth__items{
+    max-width: 358px;
+    width: 100%;
+    
+}
+@media screen and (max-width:444px) {
+    .auth__items{
+        max-width: 260px;
+        width: 100%;
+    }
+}

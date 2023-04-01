@@ -1,0 +1,19 @@
+.auth__link {
+  display: block;
+  text-decoration: none;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 444px) {
+  .auth__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
