@@ -112,6 +112,9 @@ class Api {
 const headers = {
   token:'c5441015-f46a-42d4-9fdb-e128e5e29cd3',
 }
+
+
+
 const api = new Api({ url:'https://mesto.nomoreparties.co/v1/cohort-50',headers:headers})
 
 export { api };
