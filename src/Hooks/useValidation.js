@@ -37,7 +37,7 @@ const useValidation = (value,validations,isFocus) => {
 
     },[value,validations]);
 
-
+ 
     useEffect(() => {
         const valid = isEmpty || isMaxLengthErr || isMinLengthErr || isLinkErr;
         if(valid){
